@@ -1,0 +1,20 @@
+en:
+  # English strings go here
+
+  filter_html: "Escape HTML"
+  filter_html_info: "HTML which wasn't created by the Textile processor will be escaped. This is a nice thing if you're using RedCloth for formatting in public places (e.g. Wikis) where you don't want users to abuse HTML for bad things."
+  sanitize_html: "Sanitize HTML"
+  sanitize_html_info: "HTML can pass through the Textile processor but unauthorized tags and attributes will be removed."
+  filter_styles: "Filter Styles"
+  filter_styles_info: "disable the style markup specifier. ('{color: red}')"
+  filter_classes: "Filter Classes"
+  filter_classes_info: "disable class attributes. ('!(classname)image!')"
+  filter_ids: "Filter Ids"
+  filter_ids_info: "disable id attributes. ('!(classname#id)image!')" 
+  hard_breaks: "Hard Breaks"
+  hard_breaks_info: "Traditional RedCloth converted single newlines to HTML break tags, but later versions required :hard_breaks be set to enable this behavior. :hard_breaks is once again the default."
+  lite_mode: "Lite Mode"
+  lite_mode_info: "In lite mode, block-level rules are ignored.  This means that tables, paragraphs, lists, and such aren't available. Only the inline markup for bold, italics, entities and so on."
+  no_span_caps: "No Span Caps"
+  no_span_caps_info: "Textile places 'span' tags around capitalized words by default, but this wreaks havoc on Wikis. If :no_span_caps is set, this will be suppressed."
+  

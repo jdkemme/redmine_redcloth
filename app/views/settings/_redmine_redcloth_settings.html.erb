@@ -1,0 +1,56 @@
+<p>
+  <%= check_box_tag 'settings[filter_html]', 1, @settings[:filter_html] %>
+  <%=content_tag(:label, l(:filter_html)) %>
+    <em class="info">
+    <%= l(:filter_html_info) %>
+	</em>
+</p> 
+<p>
+  <%= check_box_tag 'settings[sanitize_html]', 1, @settings[:sanitize_html] %>
+  <%=content_tag(:label, l(:sanitize_html)) %>
+    <em class="info">
+    <%= l(:sanitize_html_info) %>
+	</em>
+</p> 
+<p>
+  <%= check_box_tag 'settings[filter_styles]', 1, @settings[:filter_styles] %>
+  <%=content_tag(:label, l(:filter_styles)) %>
+    <em class="info">
+    <%= l(:filter_styles_info) %>
+	</em>
+</p> 
+<p>
+  <%= check_box_tag 'settings[filter_classes]', 1, @settings[:filter_classes] %>
+  <%=content_tag(:label, l(:filter_classes)) %>
+    <em class="info">
+    <%= l(:filter_classes_info) %>
+	</em>
+</p> 
+<p>
+  <%= check_box_tag 'settings[filter_ids]', 1, @settings[:filter_ids] %>
+  <%=content_tag(:label, l(:filter_ids)) %>
+    <em class="info">
+    <%= l(:filter_ids_info) %>
+	</em>
+</p> 
+<p>
+  <%= check_box_tag 'settings[hard_breaks]', 1, @settings[:hard_breaks] %>
+  <%=content_tag(:label, l(:hard_breaks)) %>
+    <em class="info">
+    <%= l(:hard_breaks_info) %>
+	</em>
+</p> 
+<p>
+  <%= check_box_tag 'settings[lite_mode]', 1, @settings[:lite_mode] %>
+  <%=content_tag(:label, l(:lite_mode)) %>
+    <em class="info">
+    <%= l(:lite_mode_info) %>
+	</em>
+</p> 
+<p>
+  <%= check_box_tag 'settings[no_span_caps]', 1, @settings[:no_span_caps] %>
+  <%=content_tag(:label, l(:no_span_caps)) %>
+    <em class="info">
+    <%= l(:no_span_caps_info) %>
+	</em>
+</p> 
