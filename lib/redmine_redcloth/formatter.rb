@@ -23,7 +23,7 @@ module RedmineRedcloth
 
         alias :inline_auto_link :auto_link!
         alias :inline_auto_mailto :auto_mailto!
-        
+
         #
         # Regular expressions to convert to HTML. Pulled from Redcloth3 to maintain section editing compatability
         #
@@ -39,7 +39,7 @@ module RedmineRedcloth
         C = "(?:#{C_CLAS}?#{C_STYL}?#{C_LNGE}?|#{C_STYL}?#{C_LNGE}?#{C_CLAS}?|#{C_LNGE}?#{C_STYL}?#{C_CLAS}?)"
 
         # auto_link rule after textile rules so that it doesn't break !image_url! tags
-        RULES = [:textile, :block_markdown_rule, :inline_auto_link, :inline_auto_mailto]
+        RULES = [:textile, :block_markdown_rule, :inline_auto_link, :inline_auto_mailto, :quotes]
 
         def initialize(*args)
           super

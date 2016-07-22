@@ -1,11 +1,12 @@
 require 'redmine'
 require 'redmine_redcloth/post_process'
+require 'redmine_redcloth/quote_extension'
 
 Redmine::Plugin.register :redmine_redcloth do
   name 'Redmine Redcloth plugin'
   author 'Jacob Kemme'
   description 'This is a Redcloth4x plugin for Redmine'
-  version '0.0.1'
+  version '0.0.2'
   requires_redmine :version_or_higher => '3.0.0'
   url 'https://github.com/jdkemme/redmine_redcloth'
 
