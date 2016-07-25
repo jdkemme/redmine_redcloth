@@ -4,6 +4,7 @@ module RedClothQuoteExtension
   QUOTES_CONTENT_RE = /^([> ]+)(.*)$/m
   
   def quotes( text )
+    return if filter_html 
     text.gsub!( QUOTES_RE ) do |match|
       lines = match.split( /\n/ )
       Rails.logger.debug "Block Quote lines: #{lines}"
@@ -28,4 +29,4 @@ module RedClothQuoteExtension
   end
 end
 
-RedCloth::Formatters::HTML.send(:include, RedClothQuoteExtension)
+RedCloth.send(:include, RedClothQuoteExtension)
