@@ -14,16 +14,13 @@ A Redcloth 4 plugin for Redmine
 
 ### Known Limitations:
 
-Forum links/ titles with quotes (") do not parse correctly
-
-- example: [["very nifty" forum post]]
-
-Markdown-style nested block quotes do not render
+- Markdown-style nested block quotes do not render if escape HTML option is enabled.
 	
-	>> Rails is a full-stack framework for developing database-backed web 
-	>> applications according to the Model-View-Control pattern.
-	>> To go live, all you need to add is a database and a web server.
-	> Great!
-	
+		>> Rails is a full-stack framework for developing database-backed web 
+		>> applications according to the Model-View-Control pattern.
+		>> To go live, all you need to add is a database and a web server.
+		> Great!
+
+- lite mode setting doesn't appear to have an effect on formatting
 
 
